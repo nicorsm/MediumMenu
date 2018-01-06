@@ -134,7 +134,7 @@ open class MediumMenu: UIView {
         }
     }
     
-    open func panned(on pan: UIPanGestureRecognizer) {
+    @objc open func panned(on pan: UIPanGestureRecognizer) {
         if !enabled || !panGestureEnable { return }
 
         guard
